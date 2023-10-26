@@ -1,0 +1,27 @@
+/* ------ Course Homepage Stylesheet ------ */
+
+
+/* ------ Type Selector ------ */
+body{
+    background-color: blueviolet;
+}
+
+/* ------ ID Selector ------ */
+#main-heading {
+    color: azure;
+    text-shadow: 2px 2px #000;
+}
+
+
+/* ------ Class Selector ------ */
+
+.primary{
+    border: 2px dotted #fff;
+    padding: 10px;
+}
+
+/* ------ Pseudo Selector ------ */
+
+a:link, a:visited{
+    color: #f39dcfda;
+}
