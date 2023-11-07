@@ -1,25 +1,42 @@
 /* Color Theme Swatches in Hex 
-#CC3A67
-#161A59
-#101240
-#0A0B26
-#0ABFBF
+#EB002F
+#EB4400
+#EB1D00
+#EB00BC
+#EB6D00
 */
 
 /* ---------------Box Sizing----------------- */
 
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 /* ---------------Global Styles----------------- */
 
 body {
-    font-family: 'Gideon Roman', serif;
-    color: blue;
+  font-family: "Gideon Roman", serif;
+  background-color: #eb002f;
+  color: floralwhite;
+}
+
+main {
+  background-color: #eb6d00;
+  width: 80vw;
+  /* Long form */
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  /* 4 Value Shorthand T,R,B,L */
+  margin: 40px auto 40px auto;
+  /* 2 Value Shorthand T/B, L/R */
+  margin: 40px auto;
+  border: 2px dotted #eb4400;
+  border-radius: 4px;
 }
