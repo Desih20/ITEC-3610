@@ -17,6 +17,13 @@ html {
   box-sizing: inherit;
 }
 
+/* ---------------Utility Classes----------------- */
+
+.container {
+  margin: auto;
+  padding: 40px;
+}
+
 /* ---------------Global Styles----------------- */
 
 body {
@@ -39,4 +46,70 @@ main {
   margin: 40px auto;
   border: 2px dotted #eb4400;
   border-radius: 4px;
+}
+
+header.primary {
+  background-color: #eb00bc;
+  background-image: url("https://assets.codepen.io/7248/bg_1.png");
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 3px solid #eb1d00;
+}
+
+header.primary .hgroup {
+  width: 70%;
+}
+
+.hgroup h1,
+.hgroup h2 {
+  margin: 0;
+}
+
+header.primary .hgroup h1 a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px #eb6d00;
+  font-size: 2.4rem;
+}
+
+header.primary .hgroup h2 {
+  color: #eb00bc;
+  text-shadow: 1px 1px #eb6d00;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+header.primary nav {
+  width: 30%;
+  margin: 0;
+}
+
+header.primary nav ul {
+  list-style-type: none;
+}
+
+header.primary nav ul li {
+  margin-bottom: 10px;
+}
+
+header.primary nav a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #eb00bc;
+  display: block;
+  padding: 10px;
+  border-radius: 20px 0;
+  border: 1px solid #eb002f;
+  border-right: 10px solid #fff;
+}
+
+#content h2,
+#content h3 {
+  color: #eb1d00;
+  border-left: 7.5px solid #eb002f;
+  border-radius: 15px 0;
+  padding: 7.5px;
 }
