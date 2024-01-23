@@ -13,7 +13,7 @@ html {
     font-family: 'Lato', sans-serif;
     background-color: #fff;
     opacity: 0.8;
-    background-image: radial-gradient(circle at center center, #4aad6d, #fff), repeating-radial-gradient(circle at center center, #4aad6d, #4aad6d, 10px, transparent 20px, transparent 10px);
+    background-image: radial-gradient(circle at center center, #ba55e4c1, #fff), repeating-radial-gradient(circle at center center,#ba55e4c1, #ba55e4c1, 10px, transparent 20px, transparent 10px);
     background-blend-mode: multiply;
     padding:20px;
   }
@@ -27,7 +27,7 @@ html {
   }
   
   section[id]{
-    border:6px solid rgba(0,0,0,.4);
+    border:6px solid #ab1ce9;
     background:#fff;
     border-radius:12px;
     margin:40px auto;
@@ -37,7 +37,7 @@ html {
   }
   
   h2.section-heading{
-     border-bottom:2px solid #c0c0c0;
+     border-bottom:2px solid  #ab1ce9;
   }
   
   .section-heading{
@@ -45,7 +45,7 @@ html {
   }
   
   h3.section-heading{
-    border-top:2px solid #c0c0c0;
+    border-top:2px solid #ab1ce9;
     padding-top:20px;
   }
   
@@ -61,7 +61,7 @@ html {
   }
   .markup{
     flex: 1 70%;
-    background-color:lightgrey;
+    background-color:lightpink;
     padding:10px;
     margin-bottom:40px;
     overflow:auto;
