@@ -11,7 +11,10 @@ html {
   
   body{
     font-family: 'Lato', sans-serif;
-    background:#c0c0c0;
+    background-color: #fff;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #4aad6d, #fff), repeating-radial-gradient(circle at center center, #4aad6d, #4aad6d, 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
     padding:20px;
   }
   
