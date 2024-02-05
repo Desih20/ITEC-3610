@@ -2,29 +2,35 @@
 
 /* ------ Type Selector ------ */
 body {
-  background-color: blueviolet;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 40px
+    ),
+    repeating-linear-gradient(#8a2be255, #8a2be2);
 }
 
 /* ------ ID Selector ------ */
 #main-heading {
-  color: azure;
-  text-shadow: 2px 2px #000;
+  color: #800080;
+  text-shadow: 2px 2px #fff;
 }
 
 nav.primary ul {
-  color: #fff;
+  color: #800080;
 }
 
 /* ------ Class Selector ------ */
 
 .primary {
-  border: 2px dotted #fff;
-  padding: 10px;
+  border: 2px double #800080;
 }
 
 /* ------ Pseudo Selector ------ */
 
 a:link,
 a:visited {
-  color: #f39dcfda;
+  color: #800080;
 }
