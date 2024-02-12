@@ -1,7 +1,7 @@
 $("#CircleForm").validate();
     function displayCircle() {
 
-            if ($("#CircleForm") .validate()){     
+            if ($("#CircleForm") .valid()){     
                 var radius = parseFloat(document.getElementById("radius").value);
 
                 var diameter = 2 * radius;
