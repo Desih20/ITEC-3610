@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/script.css" rel="stylesheet">
 
 </head>
 <body>
@@ -20,5 +20,20 @@
             <fieldset id="detail">
                 <legend>Unit Converter (AJAX)</legend>  
                 <br>
+
+                <label class="formlabel" for="Value">From Value: </label>
+                <input type="text" id="Value" name="Value" size="15" maxlength="15"       
+                       data-rule-required="true"  data-msg-required="Value is Required" 
+                       data-rule-number="true" data-msg-number="From Value must be a Number">
+                <label class="error" for="Value" id="ValueError"></label>
+                <br><br>
+
+                <label class="formlabel">To Value: </label>
+            <span id="ToValue"></span>
+            <br><br>
+
+            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+            <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate>
+</fieldset>
 </body>
 </html>
