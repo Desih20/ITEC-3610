@@ -1,42 +1,54 @@
-header.primary{
-    background-color: black;
-    text-align: center;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 0px;
-    padding-left: 40px;
+header.primary {
+  background-color: black;
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  padding-left: 40px;
 }
 
-header.primary h1 a{
-    color: #fff;
-    text-decoration: none;
+header.primary h1 a {
+  color: #fff;
+  text-decoration: none;
 }
 
-header.primary ul{
-padding: 25px;
-display:flex;
-flex-direction: row;
-justify-content: space-evenly;
-background-color: #00a8e8;
+header.primary ul {
+  padding: 25px;
+  margin-right: -40px;
+  margin-left: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #00a8e8;
 }
 
-header.primary li{
-    list-style-type: none;
+header.primary li {
+  list-style-type: none;
 }
 
-header.primary nav a{
-    color:black;
-    text-decoration: none;
+header.primary nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-#colophon{
-    background-color: #00a8e8;
+header.primary nav a:hover, header.primary nav a:active {
+  color: #fff;
 }
 
-#colophon h6{
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-    color: #000;
-    font-size: .9rem;
+#intro h2{
+  text-align: center;
+  font-size:40px;
+}
+
+#colophon {
+  background-color: #00a8e8;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-size: 0.9rem;
 }
