@@ -50,7 +50,7 @@ function calculate() {
 function clearform() {
   /* Set all of the form values to blank or false */
   document.getElementById("Operand1").value = "";
-  document.getElementById("Operand2").value = "";
+  document.getElementById("Operand2").value="";
   document.getElementById("Operand1Error").innerHTML = "";
   document.getElementById("Operand2Error").innerHTML = "";
   document.getElementById("AddOperator").checked = false;
