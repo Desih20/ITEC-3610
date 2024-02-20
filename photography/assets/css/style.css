@@ -4,13 +4,14 @@ img {
 }
 
 header.primary {
-  background-color: black;
+  background-color: #000;
   text-align: center;
   padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 0px;
   padding-left: 40px;
 }
+
 
 header.primary h1 a {
   color: #fff;
@@ -40,6 +41,10 @@ header.primary nav a {
 header.primary nav a:hover,
 header.primary nav a:active {
   color: #fff;
+}
+
+body{
+  font-family: 'Candal', sans-serif;                                          
 }
 
 #intro h2 {
