@@ -1,48 +1,97 @@
 function calculate() {
+    
+  
+  if ($( "#unitcalculator" ).valid()) {
+      
 
+      var value = document.getElementById("Value").value;
+      
+      var fromunit;
+      if (document.getElementById("fromcentimeters").checked) {
+          fromunit = document.getElementById("fromcentimeters").value;
+      }
+      if (document.getElementById("frommeters").checked) {
+          fromunit = document.getElementById("frommeters").value;
+      }
+      if (document.getElementById("fromkilos").checked) {
+          fromunit = document.getElementById("fromkilos").value;
+      }
+      if (document.getElementById("frominches").checked) {
+          fromunit = document.getElementById("frominches").value;
+      }
+      if (document.getElementById("fromfeet").checked) {
+          fromunit = document.getElementById("fromfeet").value;
+      }
+      if (document.getElementById("fromyards").checked) {
+          fromunit = document.getElementById("fromyards").value;
+      }
+      if (document.getElementById("frommiles").checked) {
+          fromunit = document.getElementById("frommiles").value;
+      }
 
+      var tounit;
+      if (document.getElementById("tocentimeters").checked) {
+          tounit = document.getElementById("tocentimeters").value;
+      }
+      if (document.getElementById("tometers").checked) {
+          tounit = document.getElementById("tometers").value;
+      }
+      if (document.getElementById("tokilos").checked) {
+          tounit = document.getElementById("tokilos").value;
+      }
+      if (document.getElementById("toinches").checked) {
+          tounit = document.getElementById("toinches").value;
+      }
+      if (document.getElementById("tofeet").checked) {
+          tounit = document.getElementById("tofeet").value;
+      }
+      if (document.getElementById("toyards").checked) {
+          tounit = document.getElementById("toyards").value;
+      }
+      if (document.getElementById("tomiles").checked) {
+          tounit = document.getElementById("tomiles").value;
+      }
 
-
-
-
-
-var operator;
-if (document.getElementById("CentimetersOperator").checked) {
-  operator = document.getElementById("CentimetersOperator").value;
-}
-if (document.getElementById("MetersOperator").checked) {
-  operator = document.getElementById("MetersOperator").value;
-}
-if (document.getElementById("KilometersOperator").checked) {
-  operator = document.getElementById("KilometersOperator").value;
-}
-if (document.getElementById("InchesOperator").checked) {
-  operator = document.getElementById("InchesOperator").value;
-}
-if (document.getElementById("FeetOperator").checked) {
-    operator = document.getElementById("FeetOperator").value;
+      CalculateResult(value,fromunit,tounit)
   }
-  if (document.getElementById("YardsOperator").checked) {
-    operator = document.getElementById("YardsOperator").value;
+      async function CalculateResult(value,fromunit,tounit) {
+      
+         
+          var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
+  
+
+          myURL = myURL + "?FromValue=" + encodeURIComponent(value) + "&FromUnit=" + encodeURIComponent(fromunit) + "&ToUnit=" + encodeURIComponent(tounit);
+  
+     
+          let myCalcObject = await fetch(myURL);
+          let myResult = await myCalcObject.text();
+          
+          document.getElementById("result").innerText = myResult;
+
+      }
   }
-  if (document.getElementById("MilesOperator").checked) {
-    operator = document.getElementById("MilesOperator").value;
-  }
+
+function clearForm() {
+
+  document.getElementById("Value").value = "";
+  document.getElementById("fromcentimeters").checked = false;
+  document.getElementById("frommeters").checked = false;
+  document.getElementById("fromkilos").checked = false;
+  document.getElementById("frominches").checked = false;
+  document.getElementById("fromfeet").checked = false;
+  document.getElementById("fromyards").checked = false;
+  document.getElementById("frommiles").checked = false;
+  document.getElementById("tocentimeters").checked = false;
+  document.getElementById("tometers").checked = false;
+  document.getElementById("tokilos").checked = false;
+  document.getElementById("toinches").checked = false;
+  document.getElementById("tofeet").checked = false;
+  document.getElementById("toyards").checked = false;
+  document.getElementById("tomiles").checked = false;
+  document.getElementById("result").innerText = "";
 }
 
-function clearform() {
-    /* Set all of the form values to blank or false */
-    document.getElementById("Value").value = "";
-    document.getElementById("ValueError").value = "";
-    document.getElementById("CentimetersOperator").checked = false;
-    document.getElementById("MetersOperator").checked = false;
-    document.getElementById("KilometersOperator").checked = false;
-    document.getElementById("InchesOperator").checked = false;
-    document.getElementById("FeetOperator").checked = false;
-    document.getElementById("YardsOperator").checked = false;
-    document.getElementById("MilesOperator").checked = false;
-    document.getElementById("OperatorError").innerHTML = "";
-  }
 
-/* Form Validation */
-$("#myform").validate({});
+$( "#unitcalculator" ).validate({
+
+});
