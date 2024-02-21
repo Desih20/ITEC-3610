@@ -21,20 +21,20 @@
                 <legend>Unit Converter (AJAX)</legend>  
                 <br>
 
-                <label class="formlabel" for="Value">From Value: </label>
+                <label class="formlabel">From Value: </label>
                 <input type="text" id="Value" name="Value" size="15" maxlength="15"       
                        data-rule-required="true"  data-msg-required="Value is Required" 
                        data-rule-number="true" data-msg-number="From Value must be a Number">
                 <label class="error" for="Value" id="ValueError"></label>
                 <br><br>
 
-                <label class="FromUnit" for="From">From Unit: </label>
+                <label class="formlabel" for="FromUnit">From Unit:</label>
                 <label for="fromcentimeters">
                     <input type="radio" name="From" id="fromcentimeters" value="cm"
                     data-rule-required="true" data-msg-required="From Unit is Required"/>centimeters
                 </label>
   
-                    <label for="frometer">
+                    <label for="frommeter">
                     <input type="radio" name="From" id="frommeters" value="m"
                     data-rule-required="true" data-msg-required="From Unit is Required">meters
                 </label>
@@ -67,7 +67,7 @@
                 <label for="From" class="error" id="FromError"></label>
                 <br><br>
     
-                <label class="ToUnit">To Unit: </label>
+                <label class="formlabel" for="ToUnit">To Unit: </label>
                     <label for="tocentimeters">
                     <input type="radio" name="To" id="tocentimeters" value="cm"
                     data-rule-required="true" data-msg-required="To Unit is Required"/>centimeters
@@ -97,13 +97,16 @@
                     data-rule-required="true" data-msg-required="To Unit is Required">miles
                 </label>
                 <label for="To" class="error" id="ToError"></label>
+                <br><br>
     
-                <div class="result">
-                  <p>To Value: <span id="result"></span></p>
-                  </div>
+                <label class="formlabel" for="result">To Value:</label>
+                <span id="result"></span>
+                <br><br>
   
             <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
             <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate>
+
 </fieldset>
+        </div>
 </body>
 </html>

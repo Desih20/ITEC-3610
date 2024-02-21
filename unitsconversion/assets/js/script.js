@@ -1,7 +1,7 @@
 function calculate() {
     
   
-  if ($( "#unitcalculator" ).valid()) {
+  if ($( "#myform" ).valid()) {
       
 
       var value = document.getElementById("Value").value;
@@ -71,9 +71,10 @@ function calculate() {
       }
   }
 
-function clearForm() {
+function clearform() {
 
   document.getElementById("Value").value = "";
+  document.getElementById("ValueError").innerText = "";
   document.getElementById("fromcentimeters").checked = false;
   document.getElementById("frommeters").checked = false;
   document.getElementById("fromkilos").checked = false;
@@ -88,10 +89,10 @@ function clearForm() {
   document.getElementById("tofeet").checked = false;
   document.getElementById("toyards").checked = false;
   document.getElementById("tomiles").checked = false;
+  document.getElementById("FromError").innerText = "";
+  document.getElementById("ToError").innerText = "";
   document.getElementById("result").innerText = "";
 }
 
 
-$( "#unitcalculator" ).validate({
-
-});
+$( "#myform" ).validate({});
