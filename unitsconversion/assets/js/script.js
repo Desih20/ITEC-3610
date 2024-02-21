@@ -1,78 +1,75 @@
 function calculate() {
-    
-  
-  if ($( "#myform" ).valid()) {
-      
+  if ($("#myform").valid()) {
+    var value = document.getElementById("Value").value;
 
-      var value = document.getElementById("Value").value;
-      
-      var fromunit;
-      if (document.getElementById("fromcentimeters").checked) {
-          fromunit = document.getElementById("fromcentimeters").value;
-      }
-      if (document.getElementById("frommeters").checked) {
-          fromunit = document.getElementById("frommeters").value;
-      }
-      if (document.getElementById("fromkilos").checked) {
-          fromunit = document.getElementById("fromkilos").value;
-      }
-      if (document.getElementById("frominches").checked) {
-          fromunit = document.getElementById("frominches").value;
-      }
-      if (document.getElementById("fromfeet").checked) {
-          fromunit = document.getElementById("fromfeet").value;
-      }
-      if (document.getElementById("fromyards").checked) {
-          fromunit = document.getElementById("fromyards").value;
-      }
-      if (document.getElementById("frommiles").checked) {
-          fromunit = document.getElementById("frommiles").value;
-      }
+    var fromunit;
+    if (document.getElementById("fromcentimeters").checked) {
+      fromunit = document.getElementById("fromcentimeters").value;
+    }
+    if (document.getElementById("frommeters").checked) {
+      fromunit = document.getElementById("frommeters").value;
+    }
+    if (document.getElementById("fromkilos").checked) {
+      fromunit = document.getElementById("fromkilos").value;
+    }
+    if (document.getElementById("frominches").checked) {
+      fromunit = document.getElementById("frominches").value;
+    }
+    if (document.getElementById("fromfeet").checked) {
+      fromunit = document.getElementById("fromfeet").value;
+    }
+    if (document.getElementById("fromyards").checked) {
+      fromunit = document.getElementById("fromyards").value;
+    }
+    if (document.getElementById("frommiles").checked) {
+      fromunit = document.getElementById("frommiles").value;
+    }
 
-      var tounit;
-      if (document.getElementById("tocentimeters").checked) {
-          tounit = document.getElementById("tocentimeters").value;
-      }
-      if (document.getElementById("tometers").checked) {
-          tounit = document.getElementById("tometers").value;
-      }
-      if (document.getElementById("tokilos").checked) {
-          tounit = document.getElementById("tokilos").value;
-      }
-      if (document.getElementById("toinches").checked) {
-          tounit = document.getElementById("toinches").value;
-      }
-      if (document.getElementById("tofeet").checked) {
-          tounit = document.getElementById("tofeet").value;
-      }
-      if (document.getElementById("toyards").checked) {
-          tounit = document.getElementById("toyards").value;
-      }
-      if (document.getElementById("tomiles").checked) {
-          tounit = document.getElementById("tomiles").value;
-      }
+    var tounit;
+    if (document.getElementById("tocentimeters").checked) {
+      tounit = document.getElementById("tocentimeters").value;
+    }
+    if (document.getElementById("tometers").checked) {
+      tounit = document.getElementById("tometers").value;
+    }
+    if (document.getElementById("tokilos").checked) {
+      tounit = document.getElementById("tokilos").value;
+    }
+    if (document.getElementById("toinches").checked) {
+      tounit = document.getElementById("toinches").value;
+    }
+    if (document.getElementById("tofeet").checked) {
+      tounit = document.getElementById("tofeet").value;
+    }
+    if (document.getElementById("toyards").checked) {
+      tounit = document.getElementById("toyards").value;
+    }
+    if (document.getElementById("tomiles").checked) {
+      tounit = document.getElementById("tomiles").value;
+    }
 
-      CalculateResult(value,fromunit,tounit)
+    CalculateResult(value, fromunit, tounit);
   }
-      async function CalculateResult(value,fromunit,tounit) {
-      
-         
-          var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
-  
+  async function CalculateResult(value, fromunit, tounit) {
+    var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
 
-          myURL = myURL + "?FromValue=" + encodeURIComponent(value) + "&FromUnit=" + encodeURIComponent(fromunit) + "&ToUnit=" + encodeURIComponent(tounit);
-  
-     
-          let myCalcObject = await fetch(myURL);
-          let myResult = await myCalcObject.text();
-          
-          document.getElementById("result").innerText = myResult;
+    myURL =
+      myURL +
+      "?FromValue=" +
+      encodeURIComponent(value) +
+      "&FromUnit=" +
+      encodeURIComponent(fromunit) +
+      "&ToUnit=" +
+      encodeURIComponent(tounit);
 
-      }
+    let myCalcObject = await fetch(myURL);
+    let myResult = await myCalcObject.text();
+
+    document.getElementById("result").innerText = myResult;
   }
+}
 
 function clearform() {
-
   document.getElementById("Value").value = "";
   document.getElementById("ValueError").innerText = "";
   document.getElementById("fromcentimeters").checked = false;
@@ -94,5 +91,4 @@ function clearform() {
   document.getElementById("result").innerText = "";
 }
 
-
-$( "#myform" ).validate({});
+$("#myform").validate({});
