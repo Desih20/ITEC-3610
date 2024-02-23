@@ -99,3 +99,29 @@ body {
   color: #000;
   font-size: 0.9rem;
 }
+
+.gallery1{
+  display:inline-block;
+  margin: 5px;
+  width:300px;
+}
+
+.gallery1 img{
+width:100%;
+height:auto;
+}
+
+h3{
+  text-align: center;
+}
+
+.gallery2{
+  display:inline-block;
+  margin: 5px;
+  width:300px;
+}
+
+.gallery2 img{
+width:100%;
+height:auto;
+}
