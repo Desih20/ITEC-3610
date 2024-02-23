@@ -125,3 +125,36 @@ h3{
 width:100%;
 height:auto;
 }
+
+.gallery3{
+  display:inline-block;
+  margin: 5px;
+  width:300px;
+}
+
+.gallery3 img{
+width:100%;
+height:auto;
+}
+
+.gallery4{
+  display:inline-block;
+  margin: 5px;
+  width:300px;
+}
+
+.gallery4 img{
+width:100%;
+height:auto;
+}
+
+.gallery5{
+  display:inline-block;
+  margin: 5px;
+  width:300px;
+}
+
+.gallery5 img{
+width:100%;
+height:auto;
+}
