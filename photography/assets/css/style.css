@@ -100,6 +100,10 @@ body {
   font-size: 0.9rem;
 }
 
+/* About Page */
+
+/* Portfolio Page */
+
 .gallery1{
   display:inline-block;
   margin: 5px 5px 15px 18px;
@@ -157,6 +161,12 @@ height:auto;
 .gallery5 img{
 width:100%;
 height:auto;
+}
+
+/* Pricing Page */
+
+#intro.container h3{
+  margin-bottom:40px;
 }
 
 .collapsible {
