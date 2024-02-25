@@ -131,6 +131,12 @@ a:visited {
 
 /* About Page */
 
+#articles .post img{
+  width:600px;
+  height:500px;
+  border:5px solid #00a8e8;
+}
+
 /* Portfolio Page */
 
 .gallery1{
