@@ -221,45 +221,15 @@ height:auto;
   border:none;
 }
 
-.collapsible {
-  background-color: #00a8e8;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 20px;
-  font-family: "Candal", sans-serif;
+#accordion .panel-group{
+  color: #00a8e8;
 }
 
-.active, .collapsible:hover {
-  background-color: #0087bc;
+
+.panel panel-default{
+color: #00a8e8;
 }
 
-.content {
-  padding: 0 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #00a8e8;
+#collapse1{
+  color: #00a8e8;
 }
-
-.content img{
-  float:right;
-  margin:0 0 15px 15px;
-  content-visibility: auto;
-}
-
-.collapsible .content h5{
-  font-size: 25px;
-  float:center;
-  margin:0;
-}
-
-.collapsible .content p{
-  font-size: 18px;
-  float:center;
-  margin:0;
-}
-

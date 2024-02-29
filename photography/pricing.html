@@ -5,9 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Keyword rich narrative on site purpose" />
     <meta name="author" content="Thomas Wallace" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/candal" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
@@ -24,48 +26,66 @@
         </ul>
       </nav>
     </header>
-    <section id="intro" class="container">
-      <h2>Pricing</h2>
-      <h3>Deposit: $50</h3>
-      <h4>Send your deposit to me through:</h4>
-      <ul>
-        <li><img src="assets/img/Pictogrammers-Material-Cash.512.png" width="40" height="40"> Cash</li>
-        <li><img src="assets/img/Simpleicons-Team-Simple-Cashapp.512.png" width="40" height="40"> CashApp</li>
-        <li><img src="assets/img/Simpleicons-Team-Simple-Venmo.512.png" width="40" height="40"> Venmo</li>
-        <li><img src="assets/img/Simpleicons-Team-Simple-Zelle.512.png" width="40" height="40">Zelle</li>
-        <li><img src="assets/img/Fa-Team-Fontawesome-Brands-FontAwesome-Brands-Cc-Paypal.512.png" width="40" height="40">PayPal</li>
-        <li><h4>Check</h4></li>
-      </ul>
-      </section>
-      <button type="button" class="collapsible">Concerts</button>
-      <div class="content">
-        <img src="assets/img/Concerts.jpg" alt="concert" width="200" height="300"/>
-        <h5>Concert Session</h5>
-        <p>$300 for 3+ hours</p>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Concerts</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
       </div>
-      <button type="button" class="collapsible">Events</button>
-      <div class="content">
-        <img src="assets/img/Events.jpg" alt="event" width="200" height="300"/>
-        <h5>Event Session</h5>
-        <p>$100 per hour</p>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Events</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
       </div>
-      <button type="button" class="collapsible">Fashion</button>
-      <div class="content">
-        <img src="assets/img/Fashion.jpg" alt="fashion" width="200" height="300"/>
-        <h5>Fashion Session</h5>
-        <p>$100 for 30 minutes</p>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Fashion</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
       </div>
-      <button type="button" class="collapsible">Headshots</button>
-      <div class="content">
-        <img src="assets/img/HeadShot_resized.jpg" alt="headshot" width="200" height="300"/>
-        <h5>Headshot Session</h5>
-        <p>$100 for 30 minutes</p>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Headshots</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
       </div>
-      <button type="button" class="collapsible">Portraits/Lifestyle</button>
-      <div class="content">
-        <img src="assets/img/Portraits.jpg" alt="portrait" width="200" height="300"/>
-        <h5>Portrait/Lifestyle Session</h5>
-    <p>$200 for 1 hour</p>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Portraits/Lifestyle</a>
+          </h4>
+        </div>
+        <div id="collapse5" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
       </div>
 
       <footer id="colophon" role="contentinfo">
