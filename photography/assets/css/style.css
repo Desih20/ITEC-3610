@@ -130,7 +130,79 @@ a:visited {
 }
 
 /* About Page */
+.bio{
+display: flex;
+align-items:start;
+column-gap:40px;
+margin-bottom: 100px;
+margin-top:100px;
+}
 
+.bio img{
+  border: solid #00a8e8 5px;
+}
+
+.slider{
+  position:relative;
+  width:60%;
+  overflow:hidden;
+  margin-left: 270px;
+}
+
+.images{
+  display:flex;
+  width:100%;
+}
+
+.images img{
+  height: 600px;
+  width:100%;
+  transition:all 0.15s ease;
+}
+
+.images input{
+  display: none;
+}
+
+.dots{
+  display:flex;
+  justify-content: center;
+  margin:5px;
+}
+
+.dots label{
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  border: solid #00a8e8 3px;
+  cursor:pointer;
+  transition: all 0.15s ease;
+  margin:5px;
+}
+
+.dots label:hover {
+  background:#00a8e8;
+}
+
+#img1:checked~.m1{
+margin-left:0;
+}
+
+#img2:checked~.m2{
+  margin-left:-100%;
+  }
+
+  #img3:checked~.m3{
+    margin-left:-200%;
+    }
+
+ #img4:checked~.m4{
+      margin-left:-300%;
+      }
+
+      #img5:checked~.m5{
+        margin-left:-400%;
+        }
 
 /* Portfolio Page */
 
