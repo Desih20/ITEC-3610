@@ -7,6 +7,7 @@
     <meta name="author" content="Destin Hill" />
     <link href="https://fonts.cdnfonts.com/css/candal" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
+ <script src="assets/js/script.js"></script>
   </head>
 
   <body>
@@ -27,44 +28,70 @@
 <div class="bio">
 <img src="assets/img/IMG_20240215_185721EdwardBliffin.jpg" alt="photographer" width="500" height="400">
 <div class="bio-info">
-  <h3>Hello. My name is Eddy.</h3>
+  <h3>Hello.</h3>
+  <h4>My name is Eddy.</h4>
   <p>I'm originally from Little Rock, Arkansas. I have been doing photography for at least 2 years now. Outside of photography,I like to shop when I'm not busy with work. I enjoy creating art in my photography and like to experiment new things.  </p>
-  <img src="assets/img/facebook_2175193.png" width="40" height="40">
+  <p>Follow me on my socials:</p>
+<div class="socials">
+  <a href="https://www.facebook.com/eddybesnappin" target="_blank">
+  <img src="assets/img/facebook_2175193.png" width="60" height="60">
+</a>
   <figcaption><a href="https://www.freepik.com/icon/facebook_2175193#fromView=search&page=1&position=11&uuid=d65e3628-7a0b-4184-b43a-390ff1dadc5b">Icon by Hight Quality Icons</a></figcaption>
-  <img src="assets/img/instagram_717392.png" width="40" height="40">
+  <a href="https://www.instagram.com/eddybesnappin" target="_blank">
+  <img src="assets/img/instagram_717392.png" width="60" height="60">
+</a>
   <figcaption><a href="https://www.freepik.com/icon/instagram_717392#fromView=search&page=1&position=3&uuid=a79a664f-796d-4954-9618-2a33f5e1c266">Icon by edt.im</a></figcaption>
-  <img src="assets/img/tiktok_3116490.png" width="40" height="40">
+  <a href="https://www.tiktok.com/@lilrockeddy">
+  <img src="assets/img/tiktok_3116490.png" width="60" height="60">
+</a>
   <figcaption><a href="https://www.freepik.com/icon/tiktok_3116490#fromView=search&page=1&position=5&uuid=ada2dc10-5053-40c2-b1f0-afa799a5a176">Icon by Freepik</a></figcaption>
 </div>
 </div>
-<div class="slider">
-<div class="images">
-  <input type="radio" name="slide" id="img1" checked>
-  <input type="radio" name="slide" id="img2">
-  <input type="radio" name="slide" id="img3">
-  <input type="radio" name="slide" id="img4">
-  <input type="radio" name="slide" id="img5">
-<img src="assets/img/Slide1_resized.jpg" class="m1" alt="img1">
-<img src="assets/img/Slide2_resized.jpg" class="m2" alt="img2">
-<img src="assets/img/Slide3_resized.jpg" class="m3" alt="img3">
-<img src="assets/img/Slide4_resized.jpg" class="m4" alt="img4">
-<img src="assets/img/Slide5_resized.jpg" class="m5" alt="img5">
 </div>
-<div class="dots">
-<label for="img1"></label>
-<label for="img2"></label>
-<label for="img3"></label>
-<label for="img4"></label>
-<label for="img5"></label>
-</div>
-</div>
+<!-- Slideshow container -->
+<div class="slideshow-container fade">
 
+  <!-- Full images / Content -->
+  <div class="Containers">
+    <img src="assets/img/Slide1_resized.jpg" width="400" height="300">
+  </div>
+
+  <div class="Containers">
+    <img src="assets/img/Slide2_resized.jpg" width="400" height="300">
+  </div>
+
+  <div class="Containers">
+    <img src="assets/img/Slide3_resized.jpg" width="400" height="300">
+  </div>
+
+  <div class="Containers">
+    <img src="assets/img/Slide4_resized.jpg" width="400" height="300">
+  </div>
+
+  <div class="Containers">
+    <img src="assets/img/Slide5_resized.jpg" width="400" height="300">
+  </div>
+
+  <!-- Prev and Next buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+  <span class="dots" onclick="currentSlide(4)"></span>
+  <span class="dots" onclick="currentSlide(5)"></span>
+</div> 
+<br>
+<br>
 
           <footer id="colophon" role="contentinfo">
             <h6>&copy; 2024 EddyBeSnappin</h6>
           </footer>
         </header>
-      </article>
-    </section>
   </body>
 </html>
