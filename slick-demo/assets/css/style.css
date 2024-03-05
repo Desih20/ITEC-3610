@@ -1,5 +1,5 @@
 body{
-    background-color:darkgray;
+    background-color:lightgreen;
 }
 
 img{
@@ -10,7 +10,9 @@ img{
     margin:40px auto;
     width:70vw;
     /* Set Max Content Width */
-    max-width:700px;
+    max-width:600px;
+    max-height: 405px;
+    border:solid 5px #fff;
 }
 
 /* Customize Previous/Next/Dots/Autoplay */
@@ -34,3 +36,12 @@ img{
 {
     color:black;
 }
+
+h3{
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+                
