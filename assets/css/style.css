@@ -16,6 +16,7 @@ body {
 #main-heading {
   color: #800080;
   text-shadow: 2px 2px #fff;
+  text-align: center;
 }
 
 nav.primary ul {
@@ -26,6 +27,8 @@ nav.primary ul {
 
 .primary {
   border: 2px double #800080;
+  background-color: #fff;
+  opacity:0.8;
 }
 
 /* ------ Pseudo Selector ------ */
@@ -33,4 +36,24 @@ nav.primary ul {
 a:link,
 a:visited {
   color: #800080;
+}
+
+.content{
+  border: 2px double #800080;
+  background-color: #fff;
+  opacity:0.8;
+}
+
+h3{
+  color: #800080;
+  text-shadow: 2px 1px #fff;
+  font-size:20px;
+  margin-left:20px;
+}
+
+p{
+  color: #800080;
+  font-size: 17px;
+  background-color: #fff;
+  margin-left:20px;
 }
