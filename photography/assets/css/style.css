@@ -105,16 +105,25 @@ h3{
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid #00a8e8;
+  border: 5px solid #00a8e8;
 }
 
 .container a{
   text-decoration: none;
+  font-size: 25px;
 }
 
 .container a:link,
 a:visited {
   color: #00a8e8;
+}
+
+#content .right_content h2{
+  color:#fff;
+}
+
+#content .right_content p{
+  color: #fff;
 }
 
 #colophon {
