@@ -110,7 +110,7 @@ h3 {
 
 #content .left_content {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   justify-content: center;
   max-width: 700px;
   max-height: 500px;
@@ -155,6 +155,8 @@ a:visited {
 /* About Page */
 .bio {
   display: flex;
+  flex-direction:row;
+  justify-content: center;
   align-items: start;
   column-gap: 40px;
   margin-bottom: 100px;
@@ -182,6 +184,8 @@ a:visited {
 
 .socials {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   justify-content: center;
   column-gap: 40px;
