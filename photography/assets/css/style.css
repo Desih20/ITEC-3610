@@ -33,7 +33,7 @@ header.primary li {
 header.primary nav a {
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 header.primary nav a:hover,
@@ -58,6 +58,8 @@ body {
 
 #content {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: start;
   column-gap: 40px;
   margin-bottom: 100px;
@@ -107,7 +109,9 @@ h3 {
 }
 
 #content .left_content {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   max-width: 700px;
   max-height: 500px;
   border: 5px solid #fff;
@@ -381,10 +385,30 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 
-.pricing-container img{
-  justify-content: center;
+div {
+  display: grid;
+  place-items: center;
+}
+
+figure img{
+  border:5px solid #00a8e8;
+}
+
+.pricing-container h3 {
+  text-align: center;
+  color: #000;
+}
+
+.pricing-container h4 {
+  text-align: center;
+  color: #000;
+}
+
+figure {
+  margin-bottom: 70px;
 }
 
 /* Contact Page */
