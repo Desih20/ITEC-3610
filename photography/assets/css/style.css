@@ -381,15 +381,22 @@ h3 {
   text-align: center;
   margin-top: 40px;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .payment ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+  align-items:center;
   justify-content: space-evenly;
   margin-bottom: 50px;
+}
+
+.payment a {
+  display: flex;
+  flex-direction:column;
+  font-size: 10px;
 }
 
 section {
@@ -417,7 +424,7 @@ figure {
 
 /* Booking Page */
 
-#wufoo-m16rqqe11wj01jc{
-padding-left:20%;
-padding-right:20%;
+#wufoo-m16rqqe11wj01jc {
+  padding-left: 20%;
+  padding-right: 20%;
 }
