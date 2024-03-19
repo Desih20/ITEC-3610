@@ -78,10 +78,10 @@ async function getResults() {
 
    function clearForm() {
     document.getElementById("baseCurrency").value = "";
-    document.getElementById("baseCurrencyError").innerText="";
-    document.getElementById("toCurrency").innerText = "";
-    document.getElementById("FromDate").innerText = "";
-    document.getElementById("ToDate").innerText = "";
+    document.getElementById("baseCurrencyError").value="";
+    document.getElementById("toCurrency").value = "";
+    document.getElementById("FromDate").value= "";
+    document.getElementById("ToDate").value = "";
      /* Ugly Code to Erase Canvas */
     var canvas0 = document.getElementById("chartjs-0");
     var context0 = canvas0.getContext("2d");
