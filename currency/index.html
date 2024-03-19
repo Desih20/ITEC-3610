@@ -21,15 +21,16 @@
          id="baseCurrency"
          name="baseCurrency"
          data-rule-required="true"
-         data-msg-required="Base currency is Required"
-       />
-       <dropdown id="baseCurrencyList">
-           <option value="USD">US Dollar (USD)</option>
-           <option value="PKR">Pakistani Rupee (PKR)</option>
-           <option value="KRW">Korean Won (KRW)</option>
-           <option value="AED">UAE Dirham (AED)</option>
-           <option value="JPY">Japanese Yen (JPY)</option>
-       </dropdown>
+         data-msg-required="Base currency is Required">
+           <option value="">Select a Currency...</option>
+           <option value="USD">US Dollar</option>
+           <option value="PKR">Pakistani Rupee</option>
+           <option value="KRW">Korean Won</option>
+           <option value="AED">UAE Dirham</option>
+           <option value="JPY">Japanese Yen</option>
+       </select>
+       <label for="selAuto" class="error"></label>
+       <span id="SelectExampleValue"></span>
 
 
        <label class="error" for="baseCurrency" id="baseCurrencyError"></label>
