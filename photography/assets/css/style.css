@@ -412,12 +412,52 @@ figure img {
   border: 5px solid #00a8e8;
 }
 
-.pricing-container h3 {
+#concert h3 {
   text-align: center;
   color: #000;
 }
 
-.pricing-container h4 {
+#concert h4 {
+  text-align: center;
+  color: #000;
+}
+
+#event h3 {
+  text-align: center;
+  color: #000;
+}
+
+#event h4 {
+  text-align: center;
+  color: #000;
+}
+
+#fashion h3 {
+  text-align: center;
+  color: #000;
+}
+
+#fashion h4 {
+  text-align: center;
+  color: #000;
+}
+
+#headshot h3 {
+  text-align: center;
+  color: #000;
+}
+
+#headshot h4 {
+  text-align: center;
+  color: #000;
+}
+
+#portrait h3 {
+  text-align: center;
+  color: #000;
+}
+
+#portrait h4 {
   text-align: center;
   color: #000;
 }
