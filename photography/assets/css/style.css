@@ -51,7 +51,6 @@ body {
   color: #000;
 }
 
-
 #content {
   display: flex;
   flex-direction: row;
@@ -148,9 +147,9 @@ a:visited {
   font-size: 12px;
 }
 
-#colophon h6 a{
+#colophon h6 a {
   color: black;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 /* About Page */
@@ -391,12 +390,7 @@ h3 {
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 50px;
-}
-
-.payment a {
-  display: flex;
-  flex-direction:column
-  font-size: 10px;
+  color: #000;
 }
 
 section {
