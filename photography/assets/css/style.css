@@ -149,7 +149,12 @@ a:visited {
   margin: 0;
   text-align: center;
   color: #000;
-  font-size: 0.9rem;
+  font-size: 12px;
+}
+
+#colophon h6 a{
+  color: black;
+  text-decoration:underline;
 }
 
 /* About Page */
