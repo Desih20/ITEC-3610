@@ -2,6 +2,10 @@ img {
   max-width: 100%;
 }
 
+body{
+  background-color: #fff;
+}
+
 header.primary {
   background-color: #000;
   text-align: center;
