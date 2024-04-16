@@ -108,9 +108,9 @@ h3 {
 }
 
 #content .left_content {
-  display:flex;
-  max-width:100%;
-  height:auto;
+  display: flex;
+  max-width: 100%;
+  height: auto;
   border: 5px solid #fff;
   border-radius: 5px;
 }
@@ -463,4 +463,12 @@ figure {
 #wufoo-m16rqqe11wj01jc {
   padding-left: 20%;
   padding-right: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  body #content {
+    flex-direction: column;
+    display: block;
+    background: red;
+  }
 }
