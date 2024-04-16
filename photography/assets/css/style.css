@@ -120,8 +120,14 @@ h3 {
   font-size: 25px;
 }
 
-.container figcaption {
+figure{
+text-align: center;
+}
+
+figure figcaption a{
+  font-size: 25px;
   margin-bottom: 25px;
+  text-decoration: none;
 }
 
 .container a:link,
@@ -283,7 +289,7 @@ figcaption a {
     opacity: 0.5;
   }
   to {
-    opacity: 2;
+    opacity: 1;
   }
 }
 
@@ -292,7 +298,7 @@ figcaption a {
     opacity: 0.5;
   }
   to {
-    opacity: 2;
+    opacity: 1;
   }
 }
 
@@ -466,9 +472,8 @@ figure {
 }
 
 @media screen and (max-width: 600px) {
-  body #content {
+  section#content.container {
     flex-direction: column;
-    display: block;
     background: red;
   }
 }
