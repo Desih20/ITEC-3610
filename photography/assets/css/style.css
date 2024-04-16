@@ -474,6 +474,6 @@ figure {
 @media screen and (max-width: 600px) {
   section#content.container {
     flex-direction: column;
-    background: red;
+    background: #00a8e8;
   }
 }
