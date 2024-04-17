@@ -306,7 +306,7 @@ figcaption a {
 
 .gallery1 {
   display: inline-block;
-  margin: 5px 5px 15px 18px;
+  margin: 5px 5px 15px 10px;
   width: 300px;
   align-items: center;
   justify-content: center;
