@@ -1,0 +1,199 @@
+header.primary{
+    text-align:center;
+    background-color: pink;
+    background-image: linear-gradient(to right, purple , pink, yellow);
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+  
+  
+  header.primary h1{
+    text-align:center;
+    color:white;
+    font-family: 'Lucida Handwriting', cursive;
+  }
+  
+  #intro.container h2{
+    text-align:center;
+    font-size:40px;
+  }
+  
+  #intro.container img{
+    border: solid 5px purple;
+    border-radius: 5px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  .table-of-content{
+    background:purple;
+    max-width:600px;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:5px;
+    padding:30px;
+  }
+  
+  .table-of-content h3{
+    text-align:center;
+    font-size:30px;
+    color:white;
+  }
+  
+  .headings-container ol li{
+    color:white;
+    font-size:25px;
+  }
+  
+  .headings-container ol li a{
+    font-size:25px;
+    color:white;
+    line-height:50px;
+  }
+  
+  figcaption{
+    margin-top:15px;
+    text-align:center;
+    font-style:italic;
+  }
+  
+  figcaption a{
+    font-style:normal;
+  }
+  
+  h4{
+    font-size:25px;
+    text-align:center;
+  }
+  
+  p{
+    font-size:20px;
+    text-align:justify;
+    max-width:600px;
+    margin:auto;
+    margin-bottom:80px;
+  }
+  
+  .topic1{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  .topic2{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  .topic3{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  .topic4{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  .topic5{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  .topic6{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  .topic7{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  .topic8{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    background:purple;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+  }
+  
+  #colophon{
+    text-align:center;
+    background-color: pink;
+    background-image: linear-gradient(to right, purple , pink, yellow);
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+  }
+  
+  #colophon h6{
+    color:white;
+    font-size:20px;
+    font-family:'Lucida Handwriting', cursive;
+  }
